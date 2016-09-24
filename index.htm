@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+
+<head>
+    <title>My Profile</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!-- load angular via CDN -->
+    <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="route.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directives.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand" href="#/home">HOME</a></div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/about" class="item"><i></i> ABOUT</a></li>
+                    <li><a href="#/education" class="item"><i></i> EDUCATION</a></li>
+                    <li><a href="#/experience" class="item"><i></i> EXPERIENCE</a></li>
+                    <li><a href="#/skills" class="item"><i></i> SKILLS</a></li>
+                    <li><a href="#/contact" class="item"><i></i> CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="containerBottom">
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>

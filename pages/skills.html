@@ -1,0 +1,11 @@
+<div id="section" class="container-fluid animated fadeInLeft">
+    <div class="heading">
+        <h1>SKILLS</h1>
+        <p>My technical skills</p>
+    </div>
+    <div ng-repeat="skill in skillList"> {{skill.skillName}}
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.skillCompetency}};"> {{skill.skillCompetency}} </div>
+        </div>
+    </div>
+</div>

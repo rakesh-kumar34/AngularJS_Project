@@ -1,0 +1,16 @@
+<div id="section" class="container-fluid animated fadeInLeft">
+<div class="heading">
+    <h1>EDUCATION</h1>
+    <p>My academic history</p>
+</div>
+<div class="panel panel-default" ng-repeat="education in educationList">
+    <div class="panel-heading"><span><strong>{{education.degree}}</strong></span><span class="gdate">{{education.gradDate}}</span></div>
+    <div class="panel-body">
+        <span ng-if="education.school == 'Texas A&M University, College Station'"><img src="images/tamu.jpg" class="tamuimg"></span>
+        <span ng-if="education.school == 'Visvesvaraya Technological University, Belgaum'"><img src="images/vtu.jpg" class="vtuimg"></span>
+        <span>{{education.school}}</span>
+    </div>
+    <div class="panel-body">GPA: {{education.comments}}</div>
+</div>
+</div>
+

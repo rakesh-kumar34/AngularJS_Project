@@ -1,0 +1,9 @@
+<div class="panel panel-default" ng-repeat="experience in experienceList">
+    <div class="panel-heading"><span><strong>{{experience.companyName}}</strong></span><span class="gdate">{{experience.location}}</span></div>
+    <div class="panel-heading"><span><strong>{{experience.designation}}</strong></span><span class="gdate">{{experience.timePeriod}}</span></div>
+    <div class="panel-body">
+        <div ng-repeat="workDetail in experience.workDetails">
+            <div><br>{{workDetail}}</div>
+        </div>
+    </div>
+</div>
